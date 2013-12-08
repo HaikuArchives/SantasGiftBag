@@ -105,5 +105,8 @@ COMPILER_FLAGS =
 #	specify additional linker flags
 LINKER_FLAGS = 
 
+#	specify if you want the object files to be somewhere besides the default location.
+OBJ_DIR = ${OBJ_DIR}
+
 ## include the makefile-engine
 include $(BUILDHOME)/etc/makefile-engine
