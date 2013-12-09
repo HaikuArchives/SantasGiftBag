@@ -14,7 +14,9 @@ NAME= libsanta
 #	SHARED:	Shared library or add-on
 #	STATIC:	Static library archive
 #	DRIVER: Kernel Driver
-TYPE= STATIC
+# intentionally left blank
+# it is set from the command line
+# it can be either SHARED or STATIC
 
 #	specify the source files to use
 #	full paths or paths relative to the makefile can be included
