@@ -7,7 +7,7 @@
 ## Application Specific Settings ---------------------------------------------
 
 # specify the name of the binary
-NAME= libsanta
+NAME= libsanta.so
 
 # specify the type of binary
 #	APP:	Application
@@ -149,6 +149,6 @@ APP_VERSION =
 DRIVER_PATH = 
 
 ## include the makefile-engine
-DEVEL_DIRECTORY := \
-	$(shell findpaths -r "makefile_engine" B_FIND_PATH_DEVELOP_DIRECTORY)
+#DEVEL_DIRECTORY := \
+#	$(shell findpaths -r "makefile_engine" B_FIND_PATH_DEVELOP_DIRECTORY)
 include $(DEVEL_DIRECTORY)/etc/makefile-engine
