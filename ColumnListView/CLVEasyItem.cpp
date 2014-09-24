@@ -18,6 +18,7 @@
 //**** SYSTEM HEADER FILES
 //******************************************************************************************************
 #include <string.h>
+#include <strings.h>
 #include <Region.h>
 #include <support/ClassInfo.h>  // jaf
 
