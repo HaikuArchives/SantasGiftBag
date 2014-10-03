@@ -15,7 +15,7 @@
 #include <Font.h>
 #include <Looper.h>
 
-#include "NewStrings.h"
+#include <santa/NewStrings.h>
 
 float GetStringsMaxWidth(const char** strings, int32 num_strings, const BFont* font,
 	float* string_widths)

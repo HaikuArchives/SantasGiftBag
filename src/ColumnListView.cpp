@@ -15,15 +15,15 @@
 
 #include <support/ClassInfo.h> // jaf
 #include <interface/Window.h>  // jaf
+#include <Debug.h>
 
 //******************************************************************************************************
 //**** PROJECT HEADER FILES
 //******************************************************************************************************
-#include "Debug.h"
-#include "ColumnListView.h"
-#include "CLVColumnLabelView.h"
-#include "CLVColumn.h"
-#include "CLVListItem.h"
+#include <santa/ColumnListView.h>
+#include <santa/CLVColumnLabelView.h>
+#include <santa/CLVColumn.h>
+#include <santa/CLVListItem.h>
 
 
 //******************************************************************************************************

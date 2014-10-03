@@ -23,10 +23,10 @@
 //******************************************************************************************************
 //**** PROJECT HEADER FILES
 //******************************************************************************************************
-#include "CLVColumn.h"
-#include "ColumnListView.h"
-#include "CLVColumnLabelView.h"
-#include "NewStrings.h"
+#include <santa/CLVColumn.h>
+#include <santa/ColumnListView.h>
+#include <santa/CLVColumnLabelView.h>
+#include <santa/NewStrings.h>
 
 
 //******************************************************************************************************

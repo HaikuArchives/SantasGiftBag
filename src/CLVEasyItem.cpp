@@ -26,11 +26,11 @@
 //******************************************************************************************************
 //**** PROJECT HEADER FILES
 //******************************************************************************************************
-#include "CLVEasyItem.h"
-#include "Colors.h"
-#include "CLVColumn.h"
-#include "ColumnListView.h"
-#include "NewStrings.h"
+#include <santa/CLVEasyItem.h>
+#include <santa/Colors.h>
+#include <santa/CLVColumn.h>
+#include <santa/ColumnListView.h>
+#include <santa/NewStrings.h>
 
 
 //******************************************************************************************************

@@ -12,8 +12,8 @@
 //ColumnListView source, including modified versions, but keep this documentation and license with it.
 
 #include <ScrollBar.h>
-#include "Colors.h"
-#include "ScrollViewCorner.h"
+#include <santa/Colors.h>
+#include <santa/ScrollViewCorner.h>
 
 
 ScrollViewCorner::ScrollViewCorner(float Left,float Top)

@@ -27,14 +27,14 @@
 //******************************************************************************************************
 //**** PROJECT HEADER FILES AND CLASS NAME DECLARATIONS
 //******************************************************************************************************
-#include "Colors.h"
-#include "CLVColumn.h"
+#include <santa/Colors.h>
+#include <santa/CLVColumn.h>
 class CLVListItem;
 class CLVColumnLabelView;
 class CLVFillerView;
 class CLVContainerView;
-#include "PrefilledBitmap.h"
-#include "BetterScrollView.h"
+#include <santa/PrefilledBitmap.h>
+#include <santa/BetterScrollView.h>
 
 
 //******************************************************************************************************
