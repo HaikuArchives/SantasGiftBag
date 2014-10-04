@@ -10,7 +10,7 @@
 //get at least a little something.  If any of the components of Santa's Gift Bag are is used in a shareware
 //or commercial product, I get a free copy.  The source is made available so that you can improve and extend
 //it as you need. In general it is best to customize your ColumnListView through inheritance, so that you
-//can take advantage of enhancements and bug fixes as they become available. Feel free to distribute the 
+//can take advantage of enhancements and bug fixes as they become available. Feel free to distribute the
 //ColumnListView source, including modified versions, but keep this documentation and license with it.
 
 
@@ -55,7 +55,7 @@ CLVColumn::CLVColumn(const char* label,float width,uint32 flags,float min_width)
 			int32 truncated_text_length = strlen(label)+3;
 			fTruncatedText = new char[truncated_text_length];
 			fTruncatedText[0] = 0;
-			fCachedRect.Set(-1,-1,-1,-1);		
+			fCachedRect.Set(-1,-1,-1,-1);
 		}
 		else
 			fTruncatedText = NULL;
@@ -162,7 +162,7 @@ void CLVColumn::SetWidth(float width)
 				{
 					DestArea.left = fColumnBegin;
 					DestArea.right = fColumnBegin+Delta;
-				}				
+				}
 			}
 			else
 			{
@@ -197,7 +197,7 @@ void CLVColumn::SetWidth(float width)
 				DestArea.left = fColumnEnd + Delta;
 			DestArea.right = DestArea.left;
 			fParent->fColumnLabelView->Invalidate(DestArea);
-			
+
 			//Update the column sizes, positions and group positions
 			fParent->UpdateColumnSizesDataRectSizeScrollBars(false);
 			fParent->fColumnLabelView->UpdateDragGroups();
@@ -381,7 +381,7 @@ void CLVColumn::DrawColumnHeader(BView* view, BRect header_rect, bool sort_key, 
 			view->SetHighColor(BeFocusBlue);
 		else
 			view->SetHighColor(Black);
-	
+
 		//Draw the label
 		view->SetDrawingMode(B_OP_OVER);
 		BPoint text_point;
@@ -392,11 +392,11 @@ void CLVColumn::DrawColumnHeader(BView* view, BRect header_rect, bool sort_key, 
 			BFont label_font;
 			view->GetFont(&label_font);
 			float string_width = label_font.StringWidth(label);
-			text_point.Set(header_rect.right-8.0-string_width,header_rect.top+1.0+font_ascent);			
+			text_point.Set(header_rect.right-8.0-string_width,header_rect.top+1.0+font_ascent);
 		}
 		view->DrawString(label,text_point);
 		view->SetDrawingMode(B_OP_COPY);
-	
+
 		//Underline if this is a selected sort column
 		if(sort_key)
 		{

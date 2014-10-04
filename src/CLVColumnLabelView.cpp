@@ -10,7 +10,7 @@
 //get at least a little something.  If any of the components of Santa's Gift Bag are is used in a shareware
 //or commercial product, I get a free copy.  The source is made available so that you can improve and extend
 //it as you need. In general it is best to customize your ColumnListView through inheritance, so that you
-//can take advantage of enhancements and bug fixes as they become available. Feel free to distribute the 
+//can take advantage of enhancements and bug fixes as they become available. Feel free to distribute the
 //ColumnListView source, including modified versions, but keep this documentation and license with it.
 
 #include <interface/Window.h> // jaf
@@ -506,7 +506,7 @@ void CLVColumnLabelView::MouseUp(BPoint /*where*/)
 		{
 			//The column is a "sortable" column
 			uint32 Modifiers;
-			Window()->CurrentMessage()->FindInt32("modifiers",(int32*)&Modifiers);		
+			Window()->CurrentMessage()->FindInt32("modifiers",(int32*)&Modifiers);
 			if(!(Modifiers&B_SHIFT_KEY))
 			{
 				//The user wants to select it as the main sorting column

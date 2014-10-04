@@ -8,14 +8,14 @@
 //get at least a little something.  If any of the components of Santa's Gift Bag are is used in a shareware
 //or commercial product, I get a free copy.  The source is made available so that you can improve and extend
 //it as you need. In general it is best to customize your ColumnListView through inheritance, so that you
-//can take advantage of enhancements and bug fixes as they become available. Feel free to distribute the 
+//can take advantage of enhancements and bug fixes as they become available. Feel free to distribute the
 //ColumnListView source, including modified versions, but keep this documentation and license with it.
 
 //*** DESCRIPTION ***
-//If you have a BScrollView with horizontal and vertical sliders that isn't 
+//If you have a BScrollView with horizontal and vertical sliders that isn't
 //seated to the lower-right corner of a B_DOCUMENT_WINDOW, there's a "hole"
 //between the sliders that needs to be filled.  You can use this to fill it.
-//In general, it looks best to set the ScrollViewCorner color to 
+//In general, it looks best to set the ScrollViewCorner color to
 //BeInactiveControlGrey if the vertical BScrollBar is inactive, and the color
 //to BeBackgroundGrey if the vertical BScrollBar is active.  Have a look at
 //Demo3 of ColumnListView to see what I mean if this is unclear.

@@ -8,7 +8,7 @@
 //get at least a little something.  If any of the components of Santa's Gift Bag are is used in a shareware
 //or commercial product, I get a free copy.  The source is made available so that you can improve and extend
 //it as you need. In general it is best to customize your ColumnListView through inheritance, so that you
-//can take advantage of enhancements and bug fixes as they become available. Feel free to distribute the 
+//can take advantage of enhancements and bug fixes as they become available. Feel free to distribute the
 //ColumnListView source, including modified versions, but keep this documentation and license with it.
 
 #include <string.h>
@@ -19,7 +19,7 @@
 
 float GetStringsMaxWidth(const char** strings, int32 num_strings, const BFont* font,
 	float* string_widths)
-//Fills the stringsWidths array with the width of each individual string in the array using 
+//Fills the stringsWidths array with the width of each individual string in the array using
 //BFont::GetStringWidths(), then finds the longest string width in the array and returns that width.
 //If a string_widths array is provided, it fills it in with the length of each string.
 {

@@ -8,11 +8,11 @@
 //get at least a little something.  If any of the components of Santa's Gift Bag are is used in a shareware
 //or commercial product, I get a free copy.  The source is made available so that you can improve and extend
 //it as you need. In general it is best to customize your ColumnListView through inheritance, so that you
-//can take advantage of enhancements and bug fixes as they become available. Feel free to distribute the 
+//can take advantage of enhancements and bug fixes as they become available. Feel free to distribute the
 //ColumnListView source, including modified versions, but keep this documentation and license with it.
 
 //Conventions:
-//    Global constants (declared with const) and #defines - all uppercase letters with words separated 
+//    Global constants (declared with const) and #defines - all uppercase letters with words separated
 //        by underscores.
 //        (E.G., #define MY_DEFINE 5).
 //        (E.G., const int MY_CONSTANT = 5;).
@@ -107,7 +107,7 @@ void BetterScrollView::UpdateScrollBars(bool scrolling_allowed)
 			page_width = view_width;
 		if(view_height > page_height)
 			page_height = view_height;
-	
+
 		//Adjust positions
 		float delta_x = 0.0;
 		if(m_h_scrollbar)
@@ -117,7 +117,7 @@ void BetterScrollView::UpdateScrollBars(bool scrolling_allowed)
 			else if(view_bounds.right > m_data_rect.left+page_width)
 				delta_x = m_data_rect.left+page_width - view_bounds.right;
 		}
-	
+
 		float delta_y = 0.0;
 		if(m_v_scrollbar)
 		{
@@ -126,7 +126,7 @@ void BetterScrollView::UpdateScrollBars(bool scrolling_allowed)
 			else if(view_bounds.bottom > m_data_rect.top+page_height)
 				delta_y = m_data_rect.top+page_height - view_bounds.bottom;
 		}
-	
+
 		if(delta_x != 0.0 || delta_y != 0.0)
 		{
 			m_target->ScrollTo(BPoint(view_bounds.left+delta_x,view_bounds.top+delta_y));

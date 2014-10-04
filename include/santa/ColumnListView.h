@@ -10,7 +10,7 @@
 //get at least a little something.  If any of the components of Santa's Gift Bag are is used in a shareware
 //or commercial product, I get a free copy.  The source is made available so that you can improve and extend
 //it as you need. In general it is best to customize your ColumnListView through inheritance, so that you
-//can take advantage of enhancements and bug fixes as they become available. Feel free to distribute the 
+//can take advantage of enhancements and bug fixes as they become available. Feel free to distribute the
 //ColumnListView source, including modified versions, but keep this documentation and license with it.
 
 
@@ -101,7 +101,7 @@ class ColumnListView : public BListView
 			//DisplayOrderChanged(false).
 		void GetDisplayOrder(int32* order) const;
 			//Fills a caller-provided array with the display order of the columns in the same format
-			//as used in calling SetDisplayOrder.  The order pointer should point to an array 
+			//as used in calling SetDisplayOrder.  The order pointer should point to an array
 			//int32 order[n] where n is the number of columns in the ColumnListView.
 		virtual void ColumnWidthChanged(int32 ColumnIndex, float NewWidth);
 		virtual void DisplayOrderChanged(const int32* order);
@@ -114,7 +114,7 @@ class ColumnListView : public BListView
 			//Override this to filter the modes
 		int32 GetSorting(int32* SortKeys, CLVSortMode* SortModes) const;
 			//Returns the number of used sort keys, and fills the provided arrays with the sort keys
-			//by column index and sort modes, in priority order.  The pointers should point to an array 
+			//by column index and sort modes, in priority order.  The pointers should point to an array
 			//int32 SortKeys[n], and an array CLVSortMode SortModes[n] where n is the number of sortable
 			//columns in the ColumnListView.  Note: sorting will only occur if the key column is shown.
 		void SetSorting(int32 NumberOfKeys, int32* SortKeys, CLVSortMode* SortModes);

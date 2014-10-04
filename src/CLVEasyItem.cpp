@@ -10,7 +10,7 @@
 //get at least a little something.  If any of the components of Santa's Gift Bag are is used in a shareware
 //or commercial product, I get a free copy.  The source is made available so that you can improve and extend
 //it as you need. In general it is best to customize your ColumnListView through inheritance, so that you
-//can take advantage of enhancements and bug fixes as they become available. Feel free to distribute the 
+//can take advantage of enhancements and bug fixes as they become available. Feel free to distribute the
 //ColumnListView source, including modified versions, but keep this documentation and license with it.
 
 
@@ -295,7 +295,7 @@ void CLVEasyItem::DrawItemColumn(BView *owner, BRect item_column_rect, int32 col
 				owner->GetFont(&font);
 				float string_width = font.StringWidth(text);
 				draw_point.Set(item_column_rect.right-2.0-string_width,item_column_rect.top+text_offset);
-			}				
+			}
 			owner->DrawString(text,draw_point);
 		}
 	}
@@ -343,7 +343,7 @@ int CLVEasyItem::CompareItems(const CLVListItem *a_Item1, const CLVListItem *a_I
 	if(Item1 == NULL || Item2 == NULL || Item1->m_column_types.CountItems() <= KeyColumn ||
 		Item2->m_column_types.CountItems() <= KeyColumn)
 		return 0;
-	
+
 	int32 type1 = ((int32)Item1->m_column_types.ItemAt(KeyColumn)) & CLVColTypesMask;
 	int32 type2 = ((int32)Item2->m_column_types.ItemAt(KeyColumn)) & CLVColTypesMask;
 
@@ -364,7 +364,7 @@ int CLVEasyItem::CompareItems(const CLVListItem *a_Item1, const CLVListItem *a_I
 		text2 = (const char*)Item2->m_column_content.ItemAt(KeyColumn);
 	else if(type2 == CLVColTruncateUserText || type2 == CLVColUserText)
 		text2 = Item2->GetUserText(KeyColumn,-1);
-	
+
 	return strcasecmp(text1,text2);
 }
 
@@ -413,7 +413,7 @@ void CLVEasyItem::ColumnWidthChanged(int32 column_index, float column_width, Col
 	BRect* cached_rect = (BRect*)m_cached_rects.ItemAt(column_index);
 	if(cached_rect == NULL || *cached_rect == BRect(-1,-1,-1,-1))
 		return;
-	float width_delta = column_width-(cached_rect->right-cached_rect->left);		
+	float width_delta = column_width-(cached_rect->right-cached_rect->left);
 	cached_rect->right += width_delta;
 
 	int num_columns = m_cached_rects.CountItems();

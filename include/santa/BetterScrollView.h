@@ -8,11 +8,11 @@
 //get at least a little something.  If any of the components of Santa's Gift Bag are is used in a shareware
 //or commercial product, I get a free copy.  The source is made available so that you can improve and extend
 //it as you need. In general it is best to customize your ColumnListView through inheritance, so that you
-//can take advantage of enhancements and bug fixes as they become available. Feel free to distribute the 
+//can take advantage of enhancements and bug fixes as they become available. Feel free to distribute the
 //ColumnListView source, including modified versions, but keep this documentation and license with it.
 
 //Conventions:
-//    Global constants (declared with const) and #defines - all uppercase letters with words separated 
+//    Global constants (declared with const) and #defines - all uppercase letters with words separated
 //        by underscores.
 //        (E.G., #define MY_DEFINE 5).
 //        (E.G., const int MY_CONSTANT = 5;).

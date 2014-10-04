@@ -10,7 +10,7 @@
 //get at least a little something.  If any of the components of Santa's Gift Bag are is used in a shareware
 //or commercial product, I get a free copy.  The source is made available so that you can improve and extend
 //it as you need. In general it is best to customize your ColumnListView through inheritance, so that you
-//can take advantage of enhancements and bug fixes as they become available. Feel free to distribute the 
+//can take advantage of enhancements and bug fixes as they become available. Feel free to distribute the
 //ColumnListView source, including modified versions, but keep this documentation and license with it.
 
 
@@ -53,7 +53,7 @@ BRect CLVListItem::ItemColumnFrame(int32 column_index, ColumnListView* owner)
 	if(!ThisColumn->IsShown())
 		return BRect(-1,-1,-1,-1);
 
-	int32 DisplayIndex = owner->IndexOf(this);	
+	int32 DisplayIndex = owner->IndexOf(this);
 	BRect itemRect;
 	if(DisplayIndex >= 0)
 		itemRect = owner->ItemFrame(DisplayIndex);

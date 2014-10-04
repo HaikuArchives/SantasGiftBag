@@ -10,7 +10,7 @@
 //get at least a little something.  If any of the components of Santa's Gift Bag are is used in a shareware
 //or commercial product, I get a free copy.  The source is made available so that you can improve and extend
 //it as you need. In general it is best to customize your ColumnListView through inheritance, so that you
-//can take advantage of enhancements and bug fixes as they become available. Feel free to distribute the 
+//can take advantage of enhancements and bug fixes as they become available. Feel free to distribute the
 //ColumnListView source, including modified versions, but keep this documentation and license with it.
 
 
@@ -60,7 +60,7 @@ class CLVEasyItem : public CLVListItem
 
 	private:
 		void PrepListsForSet(int column_index);
-		
+
 		BList m_column_types;	//List of int32's converted from CLVColumnTypes
 		BList m_column_content;	//List of char* (full content) or BBitmap*
 		BList m_aux_content;	//List of char* (truncated content) or int32 for bitmap horizontal offset

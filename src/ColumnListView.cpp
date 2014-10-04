@@ -10,7 +10,7 @@
 //get at least a little something.  If any of the components of Santa's Gift Bag are is used in a shareware
 //or commercial product, I get a free copy.  The source is made available so that you can improve and extend
 //it as you need. In general it is best to customize your ColumnListView through inheritance, so that you
-//can take advantage of enhancements and bug fixes as they become available. Feel free to distribute the 
+//can take advantage of enhancements and bug fixes as they become available. Feel free to distribute the
 //ColumnListView source, including modified versions, but keep this documentation and license with it.
 
 #include <support/ClassInfo.h> // jaf
@@ -135,7 +135,7 @@ ColumnListView::~ColumnListView()
 }
 
 
-CLVContainerView* ColumnListView::CreateContainer(bool horizontal, bool vertical, bool scroll_view_corner, 
+CLVContainerView* ColumnListView::CreateContainer(bool horizontal, bool vertical, bool scroll_view_corner,
 	border_style border, uint32 ResizingMode, uint32 flags)
 {
 	return new CLVContainerView(this,ResizingMode,flags,horizontal,vertical,scroll_view_corner,border);
@@ -418,7 +418,7 @@ bool ColumnListView::RemoveColumn(CLVColumn* Column)
 	int32 ColumnIndex = fSortKeyList.IndexOf(Column);
 	if(ColumnIndex >= 0)
 		fSortKeyList.RemoveItem(ColumnIndex);
-		
+
 	if(Column->fFlags & CLV_EXPANDER)
 		fExpanderColumn = -1;
 
@@ -625,7 +625,7 @@ void ColumnListView::DisplayOrderChanged(const int32* order)
 					item = (CLVListItem*)fFullItemList.ItemAt(item_index);
 				else
 					item = (CLVListItem*)ItemAt(item_index);
-				int32 DisplayIndex = IndexOf(item);	
+				int32 DisplayIndex = IndexOf(item);
 				if(DisplayIndex >= 0 && ThisColumn->IsShown())
 				{
 					BRect ThisColumnRect = ItemFrame(DisplayIndex);
@@ -648,7 +648,7 @@ void ColumnListView::DisplayOrderChanged(const int32* order)
 								ThisColumnRect.right = PushMax;
 						}
 					}
-				
+
 					if(ThisColumnRect.right >= ThisColumnRect.left)
 						item->FrameChanged(column,ThisColumnRect,this);
 					else
