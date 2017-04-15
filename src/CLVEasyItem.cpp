@@ -57,7 +57,8 @@ enum
 //**** CLVEasyItem CLASS DEFINITION
 //******************************************************************************************************
 CLVEasyItem::CLVEasyItem(uint32 level, bool superitem, bool expanded, float minheight)
-: CLVListItem(level,superitem,expanded,minheight)
+: CLVListItem(level,superitem,expanded,minheight),
+  m_column_types(20, true)
 {
 	text_offset = 0.0;
 }
