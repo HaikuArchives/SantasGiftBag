@@ -257,7 +257,7 @@ bool ColumnListView::AddColumn(CLVColumn* Column)
 		return false;
 
 	//Check if this should be locked at the beginning or end, and adjust its position if necessary
-	if(!Column->Flags() & CLV_LOCK_AT_END)
+	if(!(Column->Flags() & CLV_LOCK_AT_END))
 	{
 		bool Repeat;
 		if(Column->Flags() & CLV_LOCK_AT_BEGINNING)
@@ -355,7 +355,7 @@ bool ColumnListView::AddColumnList(BList* NewColumns)
 		CLVColumn* Column = (CLVColumn*)NewColumns->ItemAt(Counter);
 		//Check if this should be locked at the beginning or end, and adjust its position if necessary
 		int32 DisplayIndex = NumberOfColumns;
-		if(!Column->Flags() & CLV_LOCK_AT_END)
+		if(!(Column->Flags() & CLV_LOCK_AT_END))
 		{
 			bool Repeat;
 			if(Column->Flags() & CLV_LOCK_AT_BEGINNING)
