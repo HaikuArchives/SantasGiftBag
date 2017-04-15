@@ -16,15 +16,15 @@ NAME= libsanta.so
 #	DRIVER: Kernel Driver
 TYPE= SHARED
 
-# 	if you plan to use localization features 
+# 	if you plan to use localization features
 # 	specify the application MIME siganture
-APP_MIME_SIG= 
+APP_MIME_SIG=
 
 #	add support for new Pe and Eddie features
 #	to fill in generic makefile
 
 #%{
-# @src->@ 
+# @src->@
 
 #	specify the source files to use
 #	full paths or paths relative to the makefile can be included
@@ -47,14 +47,14 @@ SRCS= src/BetterScrollView.cpp \
 
 #	specify the resource definition files to use
 #	full path or a relative path to the resource file can be used.
-RDEFS= 
-	
-#	specify the resource files to use. 
+RDEFS=
+
+#	specify the resource files to use.
 #	full path or a relative path to the resource file can be used.
 #	both RDEFS and RSRCS can be defined in the same makefile.
-RSRCS= 
+RSRCS=
 
-# @<-src@ 
+# @<-src@
 #%}
 
 #	end support for Pe and Eddie
@@ -70,12 +70,12 @@ RSRCS=
 #
 #	-	for localization support add following libs:
 #		locale localestub
-#		
+#
 #	- 	if your library does not follow the standard library
 #		naming scheme you need to specify the path to the library
 #		and it's name
 #		library: my_lib.a entry: my_lib.a or path/my_lib.a
-LIBS= root be $(STDCPPLIBS)
+LIBS= be $(STDCPPLIBS)
 
 #	specify additional paths to directories following the standard
 #	libXXX.so or libXXX.a naming scheme.  You can specify full paths
@@ -83,7 +83,7 @@ LIBS= root be $(STDCPPLIBS)
 #	be recursive, so include all of the paths where libraries can
 #	be found.  Directories where source files are found are
 #	automatically included.
-LIBPATHS= 
+LIBPATHS=
 
 #	additional paths to look for system headers
 #	thes use the form: #include <header>
@@ -93,7 +93,7 @@ SYSTEM_INCLUDE_PATHS = include
 #	additional paths to look for local headers
 #	thes use the form: #include "header"
 #	source file directories are automatically included
-LOCAL_INCLUDE_PATHS = 
+LOCAL_INCLUDE_PATHS =
 
 #	specify the level of optimization that you desire
 #	NONE, SOME, FULL
@@ -112,23 +112,23 @@ LOCALES=
 #	to use.  For example, setting DEFINES to "DEBUG=1" will cause the
 #	compiler option "-DDEBUG=1" to be used.  Setting DEFINES to "DEBUG"
 #	would pass "-DDEBUG" on the compiler's command line.
-DEFINES= 
+DEFINES=
 
 #	specify special warning levels
 #	if unspecified default warnings will be used
 #	NONE = supress all warnings
 #	ALL = enable all warnings
-WARNINGS = 
+WARNINGS = ALL
 
 #	specify whether image symbols will be created
 #	so that stack crawls in the debugger are meaningful
 #	if TRUE symbols will be created
-SYMBOLS = 
+SYMBOLS =
 
 #	specify debug settings
 #	if TRUE will allow application to be run from a source-level
 #	debugger.  Note that this will disable all optimzation.
-DEBUGGER = 
+DEBUGGER =
 
 #	specify additional compiler flags for all files
 COMPILER_FLAGS =
@@ -137,16 +137,16 @@ COMPILER_FLAGS =
 LINKER_FLAGS =
 
 #	specify the version of this particular item
-#	(for example, -app 3 4 0 d 0 -short 340 -long "340 "`echo -n -e '\302\251'`"1999 GNU GPL") 
+#	(for example, -app 3 4 0 d 0 -short 340 -long "340 "`echo -n -e '\302\251'`"1999 GNU GPL")
 #	This may also be specified in a resource.
-APP_VERSION = 
+APP_VERSION =
 
 #	(for TYPE == DRIVER only) Specify desired location of driver in the /dev
 #	hierarchy. Used by the driverinstall rule. E.g., DRIVER_PATH = video/usb will
 #	instruct the driverinstall rule to place a symlink to your driver's binary in
 #	~/add-ons/kernel/drivers/dev/video/usb, so that your driver will appear at
 #	/dev/video/usb when loaded. Default is "misc".
-DRIVER_PATH = 
+DRIVER_PATH =
 
 ## include the makefile-engine
 DEVEL_DIRECTORY := \
